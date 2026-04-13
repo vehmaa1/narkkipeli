@@ -40,13 +40,13 @@ export function TierEditor({ tiers, onSave, onClose }: TierEditorProps) {
                 display: "flex", alignItems: "center", justifyContent: "center" }}>
                 {tier.image
                   ? <img src={tier.image} alt="" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
-                  : <span style={{ fontSize: 22 }}>{tier.emoji}</span>}
+                  : <span style={{ fontSize: 22 }}>{tier.name}</span>}
               </div>
               <input value={tier.name} onChange={e => update(idx, "name", e.target.value)}
                 placeholder={`Tier ${tier.id}`} style={{ padding: "6px 10px", borderRadius: 6,
                   border: "2px solid rgba(0,0,0,0.1)", fontSize: 13, fontWeight: 600,
                   color: tier.textColor, backgroundColor: "rgba(255,255,255,0.6)", width: "100%" }} />
-              <input value={tier.emoji} onChange={e => update(idx, "emoji", e.target.value)}
+              <input value={tier.name} onChange={e => update(idx, "name", e.target.value)}
                 placeholder="Emoji" style={{ padding: "6px 10px", borderRadius: 6,
                   border: "2px solid rgba(0,0,0,0.1)", fontSize: 13,
                   backgroundColor: "rgba(255,255,255,0.6)", width: "100%" }} />
