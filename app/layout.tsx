@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fi">
-      <meta name="google-site-verification" content="UOmPVtY3xqVfyiXlFM1QjMNmYyvWO89d3-W-5OI7ajY" />
-      <body style={{ margin: 0, padding: 0, backgroundColor: "#0f0e0c" }}>
+<meta name="google-site-verification" content="3j5TIirO9ElPdV9dyBVgyiCh3YAqHxlSrWnlX-P1zFU" />     
+ <body style={{ margin: 0, padding: 0, backgroundColor: "#0f0e0c" }}>
         {children}
       </body>
     </html>
